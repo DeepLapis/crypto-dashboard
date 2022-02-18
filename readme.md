@@ -19,3 +19,10 @@ crypto-dashboard
 ```
 Let's try to keep it neat so it would be easier to retrieve files
 
+# Dependency management 
+
+Before update `requirements.txt`:
+1. git pull 
+2. Install all new dependencies: `pip install -r requirements.txt `
+3. Update ur newly installed dependencies to the list: `pip freeze > requirements.txt`  
+
