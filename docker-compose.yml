@@ -1,18 +1,18 @@
 version: "3.7"
 
 services:
-  # crypto-postgres:
-  #   image: postgres:13
-  #   container_name: postgres
-  #   restart: always
-  #   environment:
-  #     - POSTGRES_DB=${POSTGRES_DB}
-  #     - POSTGRES_USER=${POSTGRES_USER}
-  #     - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-  #   ports:
-  #     - 5432:5432
-  #   volumes:
-  #     - "./postgres:/var/lib/postgresql/data:rw"
+  crypto-postgres:
+    image: postgres:13
+    container_name: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - 5432:5432
+    volumes:
+      - "./postgres:/var/lib/postgresql/data:rw"
 
   pgadmin:
     container_name: pgadmin
@@ -33,12 +33,12 @@ services:
   #     - 3000:3000
   #   volumes:
   #     - ./metabase:/metabase:rw
-  #   # environment:
-  #   #   - MB_DB_TYPE=postgres
-  #   #   - MB_DB_DBNAME=${POSTGRES_DB}
-  #   #   - MB_DB_PORT=5432
-  #   #   - MB_DB_USER=${POSTGRES_USER}
-  #   #   - MB_DB_PASS=${POSTGRES_PASSWORD}
-  #   #   - MB_DB_HOST=localhost
+  #   environment:
+  #     # - MB_DB_TYPE=postgres
+  #     # - MB_DB_DBNAME=
+  #     # - MB_DB_PORT=5432
+  #     # - MB_DB_USER=
+  #     # - MB_DB_PASS=
+  #     # - MB_DB_HOST=
   #   depends_on:
   #     - postgres

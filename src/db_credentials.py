@@ -11,16 +11,17 @@ def access_secret_version(PROJECT_ID, secret_id, version_id="latest"):
     # Return the decoded payload.
     return response.payload.data.decode('UTF-8')
 
-def retrieve_credentials(credential_file):
-    credential_file = None
-    host=
-    db=
-    user=
-    password=
+# def retrieve_credentials(credential_file=None):
+#     credential_file = None
+#     host=
+#     # host=
+#     db=
+#     user=
+#     password=
 
-    return host, db, user, password
+#     return host, db, user, password
 
-def retrieve_cmc_api_credentials(credential_file):
+def retrieve_cmc_api_credentials(credential_file=None):
     credential_file = None
     cmc_api=
     return cmc_api
