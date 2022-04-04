@@ -172,7 +172,7 @@ def clean_defillama(raw_defillama_df):
         
     raw_defillama_df['mcap_nativetvl'] = raw_defillama_df['mcap'] / raw_defillama_df['tvl']
     raw_defillama_df = raw_defillama_df.loc[:,columns_list]
-    raw_defillama_df = raw_defillama_df[raw_defillama_df['mcap']>0]
+    #raw_defillama_df = raw_defillama_df[raw_defillama_df['mcap']>0]
     raw_defillama_df['mcap_nativetvl'] = raw_defillama_df['mcap_nativetvl'].replace(np.inf, np.nan)
     raw_defillama_df['audits'] = raw_defillama_df['audits'].fillna(value=np.nan)
     raw_defillama_df['audits'] = raw_defillama_df['audits'].replace(np.nan, 0)
