@@ -54,11 +54,10 @@ def top_per_native_chain_category(protocol_list,mode=None, native_tvl=False,mcap
 
         #create counter column used for later columns names
         df['rank'] = (df
-                      .sort_values('mcap',ascending=False)
+                      #.sort_values('mcap',ascending=True)
                       .groupby([f'{mode}'],as_index=False)
-                      [['symbol','mcap']]
-                      .cumcount()
-                      .add(1))
+                      [['mcap']]
+                      .rank(method='dense', ascending=False))
 
         # Rank and order
         df = df.sort_values([f'{mode}','mcap','rank'],ascending=False)
@@ -74,11 +73,10 @@ def top_per_native_chain_category(protocol_list,mode=None, native_tvl=False,mcap
 
         #create counter column used for later columns names
         df['rank'] = (df
-                      .sort_values('native_tvl',ascending=False)
+                      #.sort_values('native_tvl',ascending=True)
                       .groupby([f'{mode}'],as_index=False)
-                      [['symbol','native_tvl']]
-                      .cumcount()
-                      .add(1))
+                      [['native_tvl']]
+                      .rank(method='dense',ascending=False))
 
         # Rank and order
         df = df.sort_values([f'{mode}','native_tvl','rank'],ascending=False)
@@ -95,11 +93,10 @@ def top_per_native_chain_category(protocol_list,mode=None, native_tvl=False,mcap
 
         #create counter column used for later columns names
         df['rank'] = (df
-                      .sort_values('mcap_nativetvl',ascending=True)
+                      #.sort_values('mcap_nativetvl',ascending=False)
                       .groupby([f'{mode}'],as_index=False)
-                      [['symbol','mcap_nativetvl']]
-                      .cumcount()
-                      .add(1))
+                      [['mcap_nativetvl']]
+                      .rank(method='dense', ascending=True))
 
         # Rank and order
         df = df.sort_values([f'{mode}','mcap_nativetvl','rank'],ascending=True)
@@ -116,11 +113,10 @@ def top_per_chain(protocol_chain_tvl):
 
     #create counter column used for later columns names
     df['rank'] = (df
-                  .sort_values('tvl_chain_specific',ascending=False)
+                  # .sort_values('tvl_chain_specific',ascending=True)
                   .groupby(['chains'],as_index=False)
-                  [['symbol','tvl_chain_specific']]
-                  .cumcount()
-                  .add(1))
+                  [['tvl_chain_specific']]
+                  .rank(method='dense', ascending=False))
 
     # Rank and order
     df = df.sort_values(['chains','tvl_chain_specific','rank'],ascending=False)
@@ -176,7 +172,7 @@ def clean_defillama(raw_defillama_df):
         
     raw_defillama_df['mcap_nativetvl'] = raw_defillama_df['mcap'] / raw_defillama_df['tvl']
     raw_defillama_df = raw_defillama_df.loc[:,columns_list]
-    raw_defillama_df = raw_defillama_df[raw_defillama_df['mcap']>0]
+    # raw_defillama_df = raw_defillama_df[raw_defillama_df['mcap']>0]
     raw_defillama_df['mcap_nativetvl'] = raw_defillama_df['mcap_nativetvl'].replace(np.inf, np.nan)
     raw_defillama_df['audits'] = raw_defillama_df['audits'].fillna(value=np.nan)
     raw_defillama_df['audits'] = raw_defillama_df['audits'].replace(np.nan, 0)
