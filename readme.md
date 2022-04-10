@@ -2,6 +2,9 @@
 
 In this project, we would experimenting with building a automated cloud based data pipeline, exploring the Crypto data ecosystem, and practicing some analytics skills.
 
+
+
+
 ## Purpose of the project
 We noticed that many `free` crypto dashboards and data feeds do not provide analytical related data and have poor segmentation.
 
