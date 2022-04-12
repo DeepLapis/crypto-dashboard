@@ -94,3 +94,8 @@ While this can morph into a blog on its own, here are some quick valuable lesson
 5. Don't miss the forest for the trees. We were too worried about the pipeline and neglected the very reason why the project started in the first place. Slowly the dashboard morphed into a dashboard that did visualisations for visualisation sake. It was a no-no in my books.
 
 6. Keeping functions composable really helped in debugging. What I suggest is that you write your codes and experimentations in Jupyter. Then, convert them to functions. Next, run the notebook as though you are running scripts. Only then, convert the codes to scripts. As I am not as experienced in scripting, this has helped me gain visibility in the dataset I was transforming and debugging.
+
+# Bonus
+With raw data you can perform some time series analysis or even more advanced studies. For instance, you can run correlation analysis on the Protocol's Market Cap segmented by Categories. This can help determine what crypto categories are correlating. This may be helpful for diversification
+
+![Alt text](pics/corr.png?raw=true "Title")
