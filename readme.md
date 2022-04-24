@@ -26,9 +26,9 @@ Why ranking? Initially, percentage change is commonly used to measure performanc
 
 Ranking is relatively more robust because it implicitly accounts for correlation and Mcap or TVL size. A large change in % does not mean that the protocol would have an increase in its rank especially when all other protocols are rising together. 
 
-As for Mcap/TVL ratio, we wanted to have relative valuation approach (like the Price/Earnings ratio) for you to determine for yourself if that protocol is undervalued or overvalued. 
+As for Mcap/TVL ratio, we wanted to have relative valuation approach (like the Price/Book ratio) for you to determine for yourself if that protocol is undervalued or overvalued. 
 
-Under the investing assumption that the market is smart and money is allocated to deserving protocols (some kind of Efficient Market Hypothesis), the ranking methodology is an easy way to find protocols that are getting invested. We believe that by ranking and measuring the shift of ranks will allow us to see the performance of protocols in a more relative manner. 
+We believe that by ranking and measuring the shift of ranks will allow us to see the performance of protocols in a more relative manner. 
 
 One use case for ranking is the ability to find rising protocols that are 'off the radar'. We aim to find and report protocols with a drastic rise in Mcap or TVL relative to other protocols and thus help you find promising protocols for investment. Likewise, protocols that has a large exodus of capital, in Mcap or TVL, would be something interesting for you to be wary about 
 
