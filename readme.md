@@ -32,6 +32,31 @@ Under the investing assumption that the market is smart and money is allocated t
 
 One use case for ranking is the ability to find rising protocols that are 'off the radar'. We aim to find and report protocols with a drastic rise in Mcap or TVL relative to other protocols and thus help you find promising protocols for investment. Likewise, protocols that has a large exodus of capital, in Mcap or TVL, would be something interesting for you to be wary about 
 
+## Sample Screenshots
+Overall State of DeFi
+![Alt text](pics/overall_defi_1.png?raw=true "Title")
+
+Overall DeFi Breakdown
+![Alt text](pics/overall_defi_2.png?raw=true "Title")
+
+Overall Category
+![Alt text](pics/category_breakdown.png?raw=true "Title")
+
+Category Drill Down
+![Alt text](pics/category_stats.png?raw=true "Title")
+
+Category Highest and Worst and Rank Changes
+![Alt text](pics/category_rank.png?raw=true "Title")
+
+List of Category Highest and Worst and Rank Changes
+![Alt text](pics/category_rank2.png?raw=true "Title")
+
+Overall chain metrics and performance
+![Alt text](pics/chain_performance.png?raw=true "Title")
+
+List of Chains Highest and Worst and Rank Changes
+![Alt text](pics/chain_performance2.png?raw=true "Title")
+
 
 ## Project Scope
 To keep the project simple because we wanted to complete in 3 weeks, the end product of the dashboard is more of business intelligence tool for you to keep an eye out on the DeFi space with data kindly provided for free by DefiLlama and CoinGecko.
