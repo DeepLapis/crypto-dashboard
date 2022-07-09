@@ -24,14 +24,14 @@ import requests
 app = Flask(__name__)
 @app.route("/")
 def main():
-    project_id =''
-    bq_dataset=''
+    project_id ='crypto-dashboard-345413'
+    bq_dataset='crypto_bq'
     client = bigquery.Client()
     try:
-        print("Testing coingecko ping")
-        gecko_ping = requests.get('https://api.coingecko.com/api/v3/ping')
-        print(gecko_ping.json()['gecko_says'])
-        print('Coingecko is ok')
+        # print("Testing coingecko ping")
+        # gecko_ping = requests.get('https://api.coingecko.com/api/v3/ping')
+        # print(gecko_ping.json()['gecko_says'])
+        # print('Coingecko is ok')
 
         print('Ingesting global crypto data')
         global_crypto_main(client, project_id, bq_dataset)
