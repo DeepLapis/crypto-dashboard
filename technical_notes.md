@@ -87,6 +87,7 @@ Once you have prepared the files above, head over to your CLI (after logging int
 gcloud builds submit --tag gcr.io/<name of project>/<name_of_image>
 gcloud run deploy --image gcr.io/<name of project>/<name_of_image> --platform managed
 ```
+Note that you can also find this name in your cloud run
 
 The first line would build the image and name the image (aka tag the image) while the second line would push the image and creates the cloud run instance. If it fails to work then there is a chance where the repo in the Google account to hold the containers is not created. Proceed to create it. 
 
