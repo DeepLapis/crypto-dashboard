@@ -2,13 +2,14 @@
 
 In this project, we would experimenting with building a automated cloud based data pipeline, exploring the Crypto data ecosystem, and practicing some analytics skills.
 
-## Explore our dashboards here!
+# Website deprecated. See screenshots for reference
+~~## Explore our dashboards here!~~
 
-* [1 of 5: Start Page](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/090e02ec-a1fb-4eee-be1b-ec4bb621465a)
-* [2 of 5: Overall DeFi](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/569d4d76-53fb-49a3-af35-2bc0f34087c3)
-* [3 of 5: Category Drill Down](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/e564835c-e781-4d51-87e6-5f1091f08a05)
-* [4 of 5: Native Chain Drill Down](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/f7a29280-06c4-4daf-a697-a4fd87dffce9)
-* [5 of 5: Specific Chain Drill Down](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/204544d6-ac87-4b09-97e6-04a769700569)
+~~* [1 of 5: Start Page](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/090e02ec-a1fb-4eee-be1b-ec4bb621465a)~~
+~~* [2 of 5: Overall DeFi](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/569d4d76-53fb-49a3-af35-2bc0f34087c3)~~
+~~* [3 of 5: Category Drill Down](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/e564835c-e781-4d51-87e6-5f1091f08a05)~~
+~~* [4 of 5: Native Chain Drill Down](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/f7a29280-06c4-4daf-a697-a4fd87dffce9)~~
+~~* [5 of 5: Specific Chain Drill Down](https://crypto-dashboard-defi.herokuapp.com/public/dashboard/204544d6-ac87-4b09-97e6-04a769700569)~~
 
 
 ## Purpose of the project
